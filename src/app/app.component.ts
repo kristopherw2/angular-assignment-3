@@ -20,7 +20,8 @@ export class AppComponent {
 
   changeVisibility() {
     this.visible = !this.visible;
-    this.countArray.push(this.countArray.length + 1)
+    //this.countArray.push(this.countArray.length + 1)
+    this.countArray.push(new Date())
   }
 
   getColor(){

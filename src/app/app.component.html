@@ -27,6 +27,6 @@
       Display Details
     </button>
     <p *ngIf="visible">Secret Password = tuna</p>
-    <p *ngFor="let item of countArray" [ngStyle]="{backgroundColor: item >= 5 ? 'blue' : 'transparent'}" [ngClass]="{greater: item >= 5}">{{item}}</p>
+    <p *ngFor="let item of countArray; let i = index" [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}" [ngClass]="{greater: i >= 4}">{{item}}</p>
   </div>
 </div>
